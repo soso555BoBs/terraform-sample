@@ -5,7 +5,7 @@
         "cpu": 333,
         "memoryReservation": 600,
         "essential": true,
-        "portMapptings": [
+        "portMappings": [
             {
                 "containerPort": 8080,
                 "hostPort": 0,
