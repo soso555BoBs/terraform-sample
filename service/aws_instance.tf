@@ -1,6 +1,6 @@
 resource "aws_instance" "sample" {
     ami = "ami-0ffb5f4e03c892bc5"
-    instance_type = "t2.micro"
+    instance_type = "t2.small"
     monitoring = true
     iam_instance_profile = data.terraform_remote_state.aws_iam.outputs.ecs_instance_profile_name
     subnet_id = data.terraform_remote_state.vpc.outputs.public_subnet_1_id
